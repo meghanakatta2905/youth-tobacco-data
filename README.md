@@ -1,34 +1,65 @@
+Youth Tobacco Use Data Analysis
 
-Overview
-This project focuses on analyzing youth tobacco use data to uncover trends, patterns, and correlations that can inform public health strategies and policies. The goal is to use data science techniques to understand tobacco consumption behaviors among youth and provide insights that can help reduce tobacco use in this demographic.
+This project analyzes youth tobacco usage patterns to uncover trends, correlations, and risk factors. The aim is to support public health strategies by identifying key drivers of tobacco use among young individuals using statistical and machine learning techniques.
 
-Project Description
-This project involves analyzing data related to youth tobacco use, including:
+Objective
+	•	Analyze tobacco use behaviors among youth populations
+	•	Explore how factors like peer influence, parental smoking, and socioeconomic status impact usage
+	•	Use statistical and predictive modeling to better understand risk groups and patterns
+	•	Present findings through clean and accessible visualizations for public health insights
 
-Data Collection: Gathering data on tobacco use among youth from various sources.
-Data Preprocessing: Cleaning and preparing the data for analysis.
-Exploratory Data Analysis (EDA): Performing exploratory analysis to identify key trends and patterns.
-Statistical Analysis: Applying statistical techniques to understand the relationships between different variables.
-Data Visualization: Creating visualizations to present findings clearly and effectively.
-Predictive Modeling: Building and evaluating models to predict tobacco use behaviors.
-Data Description
-The dataset used in this project includes:
+Dataset Overview
 
-ID: Unique identifier for each record
-Age: Age of the individual
-Gender: Gender of the individual
-Region: Geographic region of the individual
-Tobacco_Use: Information on tobacco use (e.g., frequency, type)
-Socioeconomic_Status: Socioeconomic status of the individual
-Parental_Smoking: Information about parental smoking habits
-Peer_Influence: Information on peer influence regarding tobacco use
-Health_Status: Self-reported health status
-Results
-Data Preprocessing: Cleaned and structured data for analysis.
-Exploratory Analysis: Identified key trends such as age and gender distribution of tobacco use.
-Statistical Analysis: Analyzed correlations between tobacco use and variables like socioeconomic status and peer influence.
-Visualization: Created charts and graphs to visualize tobacco use patterns.
-Predictive Modeling: Developed and tested models to predict tobacco use based on various factors (if applicable).
+The dataset includes records on youth tobacco usage along with demographic and behavioral variables:
+	•	ID: Unique identifier
+	•	Age: Age of the individual
+	•	Gender: Male / Female / Other
+	•	Region: Geographic location
+	•	Tobacco_Use: Type and frequency of tobacco use
+	•	Socioeconomic_Status: Categorical indicator of income or education background
+	•	Parental_Smoking: Whether parents/guardians smoke
+	•	Peer_Influence: Influence of peer group on tobacco use
+	•	Health_Status: Self-reported health condition
+
+Project Workflow
+
+Data Collection and Preprocessing:
+	•	Gathered youth tobacco use data from public sources
+	•	Cleaned missing values, standardized categories, and encoded categorical features
+	•	Verified data quality and filtered out noisy entries
+
+Exploratory Data Analysis (EDA):
+	•	Analyzed distribution of tobacco use by age, gender, and region
+	•	Identified patterns in usage based on parental smoking and peer influence
+	•	Used correlation heatmaps to understand variable relationships
+
+Statistical Analysis:
+	•	Examined relationships between tobacco use and socioeconomic/health factors
+	•	Used chi-square tests, ANOVA, and correlation coefficients for deeper insights
+
+Predictive Modeling:
+	•	Built classification models to predict likelihood of tobacco use
+	•	Applied logistic regression, decision trees, and random forest (if applicable)
+	•	Evaluated model performance using accuracy, precision, recall, and F1-score
+
+Data Visualization:
+	•	Bar charts and histograms for demographics
+	•	Heatmaps for correlation
+	•	Stacked plots showing usage by peer and parental influence
+
+Results and Insights
+	•	Higher tobacco use observed among certain age groups and regions
+	•	Strong correlation found between peer influence and usage patterns
+	•	Socioeconomic and parental habits showed moderate predictive power
+	•	Predictive models achieved promising accuracy in identifying at-risk youth
+
 Tools and Technologies
-Programming Language: Python
-Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
+	•	Programming Language: Python
+	•	Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
+	•	Development Environment: Jupyter Notebook, GitHub
+
+Future Improvements
+	•	Add time-series data to observe trends across years
+	•	Collect more granular data on types of tobacco products
+	•	Deploy an interactive dashboard using Streamlit for public health teams
+
